@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* 重置样式 */
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input{
+    margin:0;
+    padding:0;
+}
+body{
+    font-size:16px;
+    font-family:微软雅黑;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size:16px;
+    font-weight:normal;
+}
+b,strong{
+    font-weight:none;
+}
+i,em{
+    font-style:normal;
+}
+ul,ol,li{
+    list-style:none;
+}
+a,u{
+    text-decoration:none;
+}
+input{
+    outline:none;
+}
+img{
+    border:0;
+    display:block;/* 清除图片下面大于3px的间距 */
+}
+
+/* 清除浮动 */
+.clear_fix:after{
+    content:'.';
+    display:block;
+    clear:both;
+    height:0;
+    overflow:hidden;
+    visibility: hidden;
+}
+.clear_fix{
+    zoom:1;
+}
+/* 左右浮动 */
+.float_l{
+    float: left;
+}
+.float_r{
+    float: right;
+}
