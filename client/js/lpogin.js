@@ -87,4 +87,21 @@ $(function () {
             $(".nextOne").next().css("color", "red")
         }
     })
+
+    //注册
+    $(".loginBtn").click(function(){
+        if($(".tis").text()=="√√密码正确√"){
+            $.ajax({
+                type: "POST",
+                url: "../../server/creatDB.php",
+                data: `uName=${$("#userName").val()}&uPass=${$("3userPass")}`,
+                dataType: "json",
+                success: function (response) {
+                    alert("注册成功")
+                }
+            });
+        }else{
+            alert("所填信息有误")
+        }
+    })
 })
