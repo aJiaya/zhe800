@@ -37,9 +37,10 @@ body #zheLogin .login-top .topR a {
   color: #428bd2;
 }
 body #zheLogin .login-content {
-  height: 340px;
+  height: 400px;
   background-color: #fff;
   padding: 40px 60px;
+  position: relative;
 }
 body #zheLogin .login-content .contentL {
   width: 430px;
@@ -124,6 +125,9 @@ body #zheLogin .login-content .contentL .loginBtn a {
 body #zheLogin .login-content .contentR {
   width: 430px;
   height: 206px;
+  position: absolute;
+  top: 65px;
+  right: 66px;
 }
 body #zheLogin .login-content .contentR h3 {
   position: relative;

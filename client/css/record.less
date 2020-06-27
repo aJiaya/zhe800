@@ -1,0 +1,162 @@
+body{
+    background-color: #f6f6f6;
+    
+    #zheLogin{
+        width: 980px;
+        margin: 27px auto;
+        /* 标题 */
+        .login-top{
+            height: 82px;
+            margin-bottom: 16px;
+            position: relative;
+
+            .topL{
+                width: 287px;
+                height: 66px;
+
+                a{
+                    display: block;
+                    width: 287px;
+                    height: 66px;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .topR{
+                position: absolute;
+                right: 0;
+                bottom: 23px;
+                font-size: 12px;
+                color: #666666;
+
+                a{
+                    color: #428bd2;
+                }
+            }
+        }
+
+        /* 注册表 */
+        .login-content{
+            height: 400px;
+            background-color: #fff;
+            padding: 40px 60px;
+            position: relative;
+
+            .contentL{
+                width: 430px;
+                height: 430px;
+
+                a{
+                    display: block;
+                    width: 430px;
+                    height: 430px;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .contentR{
+                width: 312px;
+                height: 318px;
+                padding: 38px 0 20px;
+                border: 1px solid gray;
+                position: absolute;
+                top: 65px;
+                right: 66px;
+                font-size: 12px;
+
+                i{
+                    &:nth-of-type(1){
+                        position: absolute;
+                        top: 64px;
+                        left: 44px;
+                    }
+                    &:nth-of-type(2){
+                        position: absolute;
+                        top: 124px;
+                        left: 44px;
+                    }
+                }
+                input{
+                    display: inline-block;
+                    color: #999;
+                    width: 183px;
+                    border: 1px solid #c4c4c4;
+                    vertical-align: middle;
+                    height: 18px;
+                    padding: 10px;
+                    padding-left: 45px;
+                    line-height: 18px;
+                    margin: 15px 0 5px 30px;
+                }
+                p{
+                    font-size: 12px;
+                    margin: 12px 0 0 54px;
+                }
+                .btn{
+                    width: 258px;
+                    height: 62px;
+                    padding: 10px 0;
+                    position: relative;
+
+                    input{
+                        display: inline-block;
+                        width: 122px;
+                        height: 42px;
+                        background: url(//z5.tuanimg.com/v1/login/img/login_signin.png) no-repeat 0 0;
+                        border: 0;
+                        cursor: pointer;
+                        margin-right: 25px;
+                        text-decoration: none;
+                        vertical-align: middle;
+                    }
+                    a{
+                        position: absolute;
+                        top: 47px;
+                        color: #666;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                h2{
+                    height: 30px;
+                    line-height: 30px;
+                    color: #666;
+                    font-size: 12px;
+                    margin-left: 53px;
+                }
+                .otherWay{
+                    
+                    a{
+                        display: inline-block;
+                        width: 92px;
+                        height: 34px;
+                        margin-right: 10px;
+                        background-color: blue;
+                        color: #fff;
+                        line-height: 34px;
+                        text-align: center;
+                    }
+                }
+
+            }
+        }
+        /* 底部 */
+        .login-bottom{
+            height: 20px;
+            line-height: 20px;
+            color: #333;
+            font-size: 12px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+}
