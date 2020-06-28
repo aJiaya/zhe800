@@ -1,4 +1,11 @@
 $(function () {
+    $("#userName").val(13106722676);
+    $("#userPass").val(13106722676);
+    $("#checkBox").val(13106722676);
+
+
+
+
     //用户验证
     $("#userName").blur(function () {
         let userReg = /^1\d{10}$/;
@@ -89,18 +96,33 @@ $(function () {
     })
 
     //注册
-    $(".loginBtn").click(function(){
-        if($(".tis").text()=="√√密码正确√"){
+    $(".loginBtn").click(function () {
+
+        $("#userName,#userPass,#checkBox,#checkText").trigger("blur");
+
+        if (!$("#accept").is(":checked")) {
+            alert("请阅读并同意协议")
+            return;
+        }
+        if ($(".tis").text() == "√√密码正确√") {
+            let data = {
+                uName: $("#userName").val(),
+                uPass: $("#userPass").val()
+            }
             $.ajax({
                 type: "POST",
-                url: "../../server/creatDB.php",
-                data: `uName=${$("#userName").val()}&uPass=${$("3userPass")}`,
+                url: "../../zhe800/server/login.php",
+                data,
                 dataType: "json",
-                success: function (response) {
-                    alert("注册成功")
+            }).done(data => {
+                if (data.status == "success") {
+                    alert("注册成功！");
+                    // location.href = "../record.html";
+                } else {
+                    alert(data.msg);
                 }
-            });
-        }else{
+            })
+        } else {
             alert("所填信息有误")
         }
     })

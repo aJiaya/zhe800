@@ -5,7 +5,7 @@ body #zheLogin {
   width: 980px;
   margin: 27px auto;
   /* 标题 */
-  /* 注册表 */
+  /* 登录 */
   /* 底部 */
 }
 body #zheLogin .login-top {
@@ -128,7 +128,7 @@ body #zheLogin .login-content .contentR .otherWay a {
   width: 92px;
   height: 34px;
   margin-right: 10px;
-  background-color: blue;
+  background-color: skyblue;
   color: #fff;
   line-height: 34px;
   text-align: center;

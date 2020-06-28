@@ -5,12 +5,22 @@ $(function () {
             $(".helpMes").css("color", "red");
         } else {
             $(".helpMes").text("");
-            $.post("../../server/check.php", "uName=" + $(".userName").val()+"&uPAss=" + $(".userPass").val(),
-                function (data, textStatus, jqXHR) {
-                    alert(data)
-                },
-                "json"
-            )
+
+            let username=$.trim($(".userName").val());
+            let userpass=$.trim($(".userPass").val());
+            $.ajax({
+                type: "post",
+                url: "../../zhe800/server/record.php",
+                data: `username=${username}&userpass=${userpass}`,
+                dataType: "json"
+            }).done(data=>{
+                if(data.status=="success"){
+                    alert(data.msg);
+                    location.href="../index.html";
+                }else{
+                    alert(data.msg);
+                }
+            });
         }
     })
 })
