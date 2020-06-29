@@ -106,7 +106,7 @@ $(function () {
         }
         if ($(".tis").text() == "√√密码正确√") {
             let data = {
-                uName: $("#userName").val(),
+                username: $("#userName").val(),
                 uPass: $("#userPass").val()
             }
             $.ajax({

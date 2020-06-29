@@ -1,4 +1,8 @@
 $(function () {
+
+    $(".userName").val(13106722676);
+    $(".userPass").val(13106722676);
+
     $("#recordBtn").click(function () {
         if ($(".userName").val() == "" || $(".userPass").val() == "") {
             $(".helpMes").text("所填不能为空");

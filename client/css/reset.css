@@ -51,3 +51,7 @@ img{
 .float_r{
     float: right;
 }
+/* 清除边框 */
+.border_none{
+    border: none;
+}
