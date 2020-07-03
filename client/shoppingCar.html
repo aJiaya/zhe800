@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/shoppingCar.css">
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./js/shoppingCar.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="headerOne"></div>
+    <script>
+        $(".headerOne").load("./publicheader.html")
+    </script>
+    <!-- title -->
+    <div class="shoppingTit clear_fix">
+        <h2 class="float_l">购物车</h2>
+        <p></p>
+    </div>
+    <!-- shoppingCarMes -->
+    <div id="shoppingCarMes">
+        <div class="shoppingMes-wrap">
+            <div class="shopping_header">
+                <span>
+                    <input type="checkbox" class="chooseAll">
+                </span>
+                <span>全选</span>
+                <span>商品</span>
+                <span>单价（元）</span>
+                <span>数量</span>
+                <span>金额（元）</span>
+                <span>操作</span>
+            </div>
+            <!-- 所有信息集合 -->
+            <div class="allShoppingCar">
+                <!-- 商品信息 -->
+                <!-- <div class="car_item">
+                    <div class="item_tit clear_fix">
+                        <h3 class="float_l">满2件8.5折</h3>
+                        <a href="#" class="float_l">去凑单></a>
+                    </div>
+
+                    <div class="item_goods">
+                        <p class="p1">
+                            <input type="checkbox" class="goodsItem">
+                        </p>
+                        <p class="p2">
+                            <a href="#">
+                                <img src="https://z3.tuanimg.com/imagev2/trade/800x800.363b58c9b5361ebf8e6ef3b63e091148.100x100.jpg"
+                                    alt="">
+                            </a>
+                            <a href="#">古奇天伦夏季露趾高跟粗跟凉鞋女仙女风百搭一字式扣带女鞋子5101</a>
+                        </p>
+                        <p class="p3">
+                            <span class="goods_prices">10.9</span>
+                            <span>29.9</span>
+                        </p>
+                        <p class="p4">
+                            <i class="cut_count"></i>
+                            <input type="text" value="1" class="countsVal">
+                            <i class="add_count"></i>
+                        </p>
+                        <p class="oneGoods_price">
+                            10.9
+                        </p>
+                        <p class="deleCounts">删除</p>
+                    </div>
+
+                </div> -->
+               
+
+
+
+            </div>
+            <!-- 结算 -->
+            <div class="all_counts clear_fix">
+                <p class="float_l">
+                    <input type="checkbox" class="chooseAll">
+                    <span>全选</span>
+                </p>
+                <div class="float_l">
+                    <span>
+                        共
+                        <b id="allGoodsCounts">0</b>
+                        件
+                    </span>
+                    <span>
+                        总计（不含运费）：
+                        <strong>
+                            ￥
+                            <i id="allGoodsPrices">0.00</i>
+                        </strong>
+                    </span>
+                    <a href="#">结算</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bottom -->
+    <div class="bottomOne"></div>
+    <script>
+        $(".bottomOne").load("./publicbottom.html")
+    </script>
+    <!-- <script>$.parser.parse($(".car_item"))</script> -->
+</body>
+
+</html>

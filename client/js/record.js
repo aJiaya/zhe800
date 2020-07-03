@@ -18,9 +18,16 @@ $(function () {
                 data: `username=${username}&userpass=${userpass}`,
                 dataType: "json"
             }).done(data=>{
+                console.log(data)
                 if(data.status=="success"){
-                    alert(data.msg);
-                    location.href="../index.html";
+                    /* ..登录成功.. */
+                    /* (1) 要把用户的id和名字保存起来 */
+                    localStorage.setItem("userID",data.d.userId)
+                    localStorage.setItem("username",data.d.username)
+                    // console.log(data,"+++")
+                    /* (2) 跳转回列表页 */
+                    alert(data.d.msg);
+                    location.href="./index.html";
                 }else{
                     alert(data.msg);
                 }

@@ -1,7 +1,8 @@
 /* 版心 */
 .headerTop-wrap,
 .serach-wrap,
-.nav-wrap {
+.nav-wrap,
+.bottom-wrap {
   width: 1200px;
   margin: 0 auto;
 }
@@ -46,6 +47,7 @@
 .serach-wrap .searchL {
   width: 225px;
   height: 55px;
+  cursor: pointer;
 }
 .serach-wrap .searchL img {
   width: 100%;
@@ -97,8 +99,10 @@
   box-shadow: 5px 0 10px #ddd, -5px 0 10px #ddd;
   border-bottom: 2px solid #ec1611;
 }
-.nav-wrap a:first-child {
+.nav-wrap a:nth-child(1) {
   width: 150px;
+}
+.nav-wrap .nav_high {
   background: #e60044;
   color: #fff;
 }
@@ -165,4 +169,79 @@
   text-align: center;
   color: #fff;
   background-color: #c7000b;
+}
+/* bottom */
+#bottom {
+  border-top: 3px solid #ec1611;
+}
+#bottom .bottom-wrap {
+  height: 401px;
+}
+#bottom .bottom-wrap .bottom_links {
+  height: 301px;
+}
+#bottom .bottom-wrap .bottom_links ul li {
+  padding: 28px 0 0;
+  width: 140px;
+  height: 270px;
+  float: left;
+}
+#bottom .bottom-wrap .bottom_links ul li .links_logo {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 14px;
+  background: url("//status.tuanimg.com/statics/zhe/common/img/foot_icon.png");
+}
+#bottom .bottom-wrap .bottom_links ul li span:nth-of-type(2) {
+  display: block;
+  font: 16px/30px "microsoft yahei";
+  color: #333;
+}
+#bottom .bottom-wrap .bottom_links ul li a {
+  display: block;
+  color: #999;
+  height: 24px;
+  width: 85px;
+  font-size: 12px;
+  line-height: 24px;
+}
+#bottom .bottom-wrap .bottom_links ul li a:hover {
+  color: #ec1611;
+  text-decoration: underline;
+}
+#bottom .bottom-wrap .bottom_links ul .links_c {
+  width: 140px;
+  height: 270px;
+  padding: 28px 0 0 60px;
+}
+#bottom .bottom-wrap .bottom_links ul .links_c1 {
+  width: 180px;
+  padding: 28px 0 0 60px;
+}
+#bottom .bottom-wrap .bottom_links ul .links_phone {
+  width: 170px;
+  padding-top: 28px;
+}
+#bottom .bottom-wrap .bottom_links ul .links_phone div {
+  width: 104px;
+  height: 220px;
+  margin: 0 33px;
+  background: url("http://status.tuanimg.com/statics/zhe/common/img/footer_code.png") no-repeat;
+}
+#bottom .bottom-wrap .bottom_links ul .links_phone span {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  display: block;
+}
+#bottom .bottom-wrap .bottom_mes {
+  height: 100px;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}
+#bottom .bottom-wrap .bottom_mes a {
+  font-size: 12px;
+  color: #999;
 }

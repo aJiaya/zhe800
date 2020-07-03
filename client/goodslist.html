@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/goodslist.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./js/goodslist.js"></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="headerOne"></div>
+    <script>
+        $(".headerOne").load("./publicheader.html")
+    </script>
+    <!-- listMes -->
+    <div id="listMes">
+        <div class="listMes-wrap">
+            <div class="goods_tit">
+                <a href="#">全部</a>
+                <a href="#">服装</a>
+                <a href="#">居家百货</a>
+                <a href="#">鞋包配饰</a>
+                <a href="#">母婴儿童</a>
+                <a href="#">美食</a>
+            </div>
+            <ul class="clear_fix all_list">
+                <li>
+                    <a href="#" class="img_links">
+                        <img src="//z2.tuanimg.com/imagev2/cpc/800x796.1e7ad4d29bbc2c4aaeafaff433b0c86a.380x380.jpg"
+                            alt="">
+                    </a>
+                    <h3>
+                        <a href="#">
+                            天猫 | 2020夏季猫和老鼠情侣宽松T恤内搭上衣短袖ins潮纯棉大码打底衫女
+                        </a>
+                    </h3>
+                    <h4>
+                        <em>
+                            <b>¥</b>19.9
+                        </em>
+                        <span>剩余1天</span>
+                    </h4>
+                    <div class="links_bottom">
+                        <input type="button" value="加入购物车" class="addCar">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 分页 -->
+    <nav aria-label="Page navigation example" class="part-wrap">
+        <ul class="pagination">
+            <li class="page-item" id="prevOne">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+
+            <li class="page-item" id="nextOne">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- bottom -->
+    <div class="bottomOne"></div>
+    <script>
+        $(".bottomOne").load("./publicbottom.html")
+    </script>
+</body>
+
+</html>

@@ -1,27 +1,63 @@
-$(()=>{
+$(() => {
     /* 侧边栏的移入哟移出 */
-    $(".screenR").children("div").on("mouseenter","a",function(){
-        $(this).children("p").css("display","block")
+    $(".screenR").on("mouseenter", "div", function () {
+        $(this).children("p").css("display", "block")
     })
-    $(".screenR div").on("mouseleave","i",function(){
-        $(this).children("p").css("display","none")
+    $(".screenR").on("mouseleave", "a", function () {
+        $(this).next().css("display", "none")
     })
+
+
+
+    //当点击跳转链接后，回到页面顶部位置
+    $(".goTop").click(function () {
+        if ($('html').scrollTop()) {
+            $('html').animate({ scrollTop: 0 }, 100);//动画效果
+            return false;
+        }
+        $('body').animate({ scrollTop: 0 }, 100);
+        return false;
+    });
+
+    /* nav点击事件 */
+    $(".nav-wrap").on("click", "a", function () {
+        $(".nav-wrap").children().removeClass("nav_high")
+        $(this).addClass("nav_high");
+
+
+    })
+
+
+
+    /* 检测登录用户 */
+    if (localStorage.getItem("userID")) {
+        /* 删除前面的QQ登录 */
+        $(".downloadQQ").remove();
+        /* 设置登录名 */
+        let str = ("欢迎您，" + localStorage.getItem("username")).toString();
+        $(".user").text(str)
+        $(".user").css({ "height": "30px", "line-height": "30px" })
+    }else{
+        alert("请登录后浏览网站")
+        location.href="../client/record.html"
+    }
+
+    
+    /* 点击logo跳转首页 */
+    $(".searchL").click(function(){
+        location.href="../client/index.html"
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
 })
-
-
-/* 获取首页数据 */
-// let allDiv=document.querySelector(".dealbox").querySelectorAll(".brand-cpc");
-// let arr=[];
-// allDiv.forEach(item=>{
-//     let obj={};
-//     obj.src=item.querySelector(".con").querySelector("img").src;
-
-//     obj.title=item.querySelector(".con").querySelector(".title-time").querySelector(".title-url").innerText;
-
-//     obj.discount=item.querySelector(".con").querySelector(".coupon-collect").querySelector(".coupon").innerText;
-
-//     obj.lastTime=item.querySelector(".con").querySelector(".title-time").querySelector(".remain-time").innerText
-
-//     obj.idname=item.getAttribute("data-id");
-//     arr.push(obj)
-// })

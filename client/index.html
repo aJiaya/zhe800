@@ -13,134 +13,16 @@
     <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/swiper/js/swiper.min.js"></script>
     <script src="./js/photoMove.js"></script>
-    <script src="./js/public.js"></script>
     <script src="./js/index.js"></script>
-
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
 <body>
     <!-- headerTop -->
-    <div id="headerTop">
-        <div class="headerTop-wrap">
-            <ul>
-                <li>
-                    <a href="#">团800旗下网站</a>
-                </li>
-                <li>
-                    <i class="iconfont icon-shouji"></i>
-                    <a href="#">手机版</a>
-                </li>
-                <li>
-                    <a href="#">QQ登录</a>
-                </li>
-                <li>
-                    <a href="#">登录</a>
-                    <a href="#">免费注册</a>
-                </li>
-                <li>
-                    <a href="#">我的订单</a>
-                </li>
-                <li>
-                    <a href="#">我的订单</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="iconfont icon-gouwuche"></i>
-                        购物车
-                        <b>1</b>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">帮助中心</a>
-                </li>
-                <li>
-                    <a href="#">卖家中心</a>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-    <!-- search -->
-    <div class="serach-wrap">
-        <div class="searchL">
-            <img src="http://status.tuanimg.com/statics/zhe/common/img/logo_zhe800_new.png" alt="">
-        </div>
-        <div class="searchC">
-            <label for="searchText">搜索</label>
-            <input type="text" id="searchText" placeholder="连衣裙女">
-        </div>
-        <a href="#">
-            <img src="//status.tuanimg.com/statics/zhe/common/img/head_three_icon_retina.png" alt="">
-        </a>
-    </div>
-    <!-- nav -->
-    <div class="nav-wrap">
-        <a href="#">首页</a>
-        <a href="#">
-            淘宝精选
-        </a>
-        <a href="#">
-            9块9包邮
-        </a>
-        <a href="#">
-            排行榜
-        </a>
-        <a href="#">
-            品牌团
-        </a>
-        <a href="#">
-            优品汇
-        </a>
-        <a href="#">精选预告</a>
-        <a href="#">积分商城</a>
-        <a href="#">签到享好礼</a>
-    </div>
-    <!-- screenR -->
-    <div class="screenR">
-
-        <a href="#" class="screenRcar">
-            <i class="iconfont icon-gouwuche"></i>
-            购物车
-            <p>1</p>
-        </a>
-        <div>
-            <a href="#">
-                <i class="iconfont icon-ding_huabanfuben"></i>
-            </a>
-            <p>我的订单</p>
-        </div>
-        <div>
-            <a href="#">
-                <i class="iconfont icon-quan"></i>
-            </a>
-            <p>我的优惠券</p>
-        </div>
-        <div>
-            <a href="#">
-                <i class="iconfont icon-shoucang"></i>
-            </a>
-            <p>我的订单</p>
-        </div>
-        <div>
-            <a href="#">
-                <i class="iconfont icon-dkw_xiaoxi"></i>
-            </a>
-            <p>卖家消息</p>
-        </div>
-        <div>
-            <a href="#">
-                <i class="iconfont icon-wenhao"></i>
-            </a>
-            <p>常见问题</p>
-        </div>
-        <div>
-            <a href="#">
-                <i class="iconfont icon-dingbu"></i>
-            </a>
-            <p>回到顶部</p>
-        </div>
-
-    </div>
+    <div class="tryone"></div>
+    <script>
+        $(".tryone").load("./publicheader.html")
+    </script>
     <!-- 轮播图 -->
     <div class="movePho-wrap">
         <!-- 二级菜单 -->
@@ -193,7 +75,7 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </li>
             <li class="navMes">
@@ -244,7 +126,7 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </li>
             <li class="navMes">
@@ -295,7 +177,7 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </li>
             <li class="navMes">
@@ -346,7 +228,7 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </li>
             <li class="navMes">
@@ -397,7 +279,7 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </li>
             <li class="navMes">
@@ -448,7 +330,7 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </li>
             <li class="navMes">
@@ -499,7 +381,7 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </li>
             <li class="navMes">
@@ -550,7 +432,7 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </li>
         </ul>
@@ -604,20 +486,30 @@
                     <a href="#">最热</a>
                 </div>
             </div>
-            <ul class="goodsMes clear_fix">
-                <li>
-                    <a href="#" class="goodsPho">
-                        <img src="https://z3.tuanimg.com/imagev2/zhaoshang/600x600.44de05e8969ffc8a97fd5e986116a151.380x380.jpg.webp" alt="">
-                    </a>
-                    <div>
-                        <a href="#">卓图女装品质专场</a>
-                        <span>剩余1天</span>
-                    </div>
-                    <span class="goodsDis">满1件4.5折</span>
-                </li>
-            </ul>
+            <ul class="goodsMes clear_fix"></ul>
         </div>
     </div>
+    <!-- 分页 -->
+    <nav aria-label="Page navigation example" class="part-wrap">
+        <ul class="pagination">
+            <li class="page-item" id="prevOne">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+           
+            <li class="page-item" id="nextOne">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- bottom -->
+    <div class="bottomOne"></div>
+    <script>
+        $(".bottomOne").load("./publicbottom.html")
+    </script>
 </body>
 
 </html>

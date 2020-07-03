@@ -1,4 +1,4 @@
-window.onload=function(){
+$(()=>{
     var mySwiper = new Swiper('.swiper-container', {
         autoplay: {
             delay: 3000,
@@ -19,9 +19,10 @@ window.onload=function(){
             prevEl: '.swiper-button-prev',
         },
     })
+    
     for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
         mySwiper.pagination.bullets[i].onmouseover = function () {
             this.click();
         };
     }    
-}
+})

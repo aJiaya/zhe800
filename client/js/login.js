@@ -117,7 +117,7 @@ $(function () {
             }).done(data => {
                 if (data.status == "success") {
                     alert("注册成功！");
-                    // location.href = "../record.html";
+                    location.href = "./record.html";
                 } else {
                     alert(data.msg);
                 }

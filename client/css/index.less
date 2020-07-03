@@ -1,5 +1,5 @@
 /* 版心 */
-.movePho-wrap,.goodsList-wrap{
+.movePho-wrap,.goodsList-wrap,.part-wrap{
     width: 1200px;
     margin: 0 auto;
 }
@@ -76,7 +76,7 @@
     background-color: #f2f2f2;
 
     .goodsList-wrap{
-        min-height: 3750px;
+        min-height: 1939px;
 
         .goodsTop{
             height: 42px;
@@ -138,6 +138,9 @@
                 margin: 0 8px 30px;
                 background-color: #fff;
                 float: left;
+                &:hover{
+                    box-shadow: 5px 0 10px #ddd, -5px 0 10px #ddd;
+                }
 
                 .goodsPho{
                     display: block;
@@ -179,5 +182,14 @@
                 }
             }
         }
+    }
+}
+
+/* 分页 */
+.part-wrap{
+    display: block;
+    padding: 25px 0;
+    ul{
+        padding-left: 131px;
     }
 }

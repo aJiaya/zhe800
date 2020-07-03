@@ -1,0 +1,238 @@
+#details {
+  width: 1200px;
+  height: 520px;
+  margin: 0 auto;
+}
+#details .details_l {
+  width: 402px;
+}
+#details .details_l figure {
+  width: 402px;
+  height: 402px;
+}
+#details .details_l figure img {
+  width: 100%;
+  height: 100%;
+}
+#details .details_l ul {
+  width: 408px;
+  height: 60px;
+  margin: 16px 0 0 42px;
+}
+#details .details_l ul .hightColor {
+  border-color: #ec1611;
+  opacity: 1;
+}
+#details .details_l ul li {
+  float: left;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #e5e5e5;
+  opacity: 0.5;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#details .details_l ul li img {
+  width: 100%;
+  height: 100%;
+}
+#details .details_R {
+  width: 745px;
+  height: 495px;
+  margin: 16px 0 0 53px;
+}
+#details .details_R .details_mes {
+  width: 512px;
+  height: 482px;
+}
+#details .details_R .details_mes h3 {
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  color: #333;
+  margin: -3px 0 15px 0;
+  font-weight: 700;
+}
+#details .details_R .details_mes .price_box {
+  height: 98px;
+  background: #fff6eb;
+  padding: 12px 18px 9px;
+  margin-bottom: 10px;
+}
+#details .details_R .details_mes .price_box strong {
+  display: inline-block;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  color: #ec1611;
+}
+#details .details_R .details_mes .price_box strong i {
+  font-size: 26px;
+  margin-left: 5px;
+}
+#details .details_R .details_mes .price_box strong em {
+  font-size: 12px;
+  color: #666;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+#details .details_R .details_mes .price_box .details_p1 {
+  margin-bottom: 10px;
+}
+#details .details_R .details_mes .price_box .details_p1 span:nth-child(1) {
+  width: 44px;
+  height: 16px;
+  display: inline-block;
+  background: #ff8a00;
+  border-radius: 3px;
+  line-height: 16px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
+#details .details_R .details_mes .price_box .details_p1 span:nth-child(2) {
+  color: #666;
+  font-size: 12px;
+  margin-left: 15PX;
+}
+#details .details_R .details_mes .price_box .details_p2 span:nth-child(1) {
+  width: 44px;
+  height: 16px;
+  display: inline-block;
+  background: #fe7393;
+  border-radius: 3px;
+  line-height: 16px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
+#details .details_R .details_mes .price_box .details_p2 span:nth-child(2) {
+  color: #fe7393;
+  font-size: 12px;
+  margin-left: 15PX;
+}
+#details .details_R .details_mes .goods_allmes {
+  height: 40px;
+  padding-left: 20px;
+}
+#details .details_R .details_mes .goods_allmes span:nth-child(1) {
+  display: inline-block;
+  width: 46px;
+  height: 18px;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+  padding-right: 3px;
+  background: url(//i4.tuanimg.com/shop/asset/item_d/products/new1.ccb9914b.png) no-repeat 0 0;
+  margin: 3px 8px 0 0;
+  font-size: 12px;
+}
+#details .details_R .details_mes .goods_allmes span:nth-child(2) {
+  font-size: 12px;
+  color: #666;
+}
+#details .details_R .details_mes .goods_color {
+  margin-bottom: 15px;
+}
+#details .details_R .details_mes .goods_color .hightColor {
+  border-color: #ec1611;
+  opacity: 1;
+}
+#details .details_R .details_mes .goods_color span:not(:first-child) {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  border: 1px solid #ccc;
+}
+#details .details_R .details_mes .goods_color span:not(:first-child) img {
+  width: 100%;
+  height: 100%;
+}
+#details .details_R .details_mes .goods_size span:nth-child(2) {
+  border: 1px solid #e02f2f;
+  display: inline-block;
+  width: 42px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+}
+#details .details_R .details_mes .goods_count span:last-child {
+  display: inline-block;
+  width: 115px;
+  height: 30px;
+  border: 1px solid #ccc;
+}
+#details .details_R .details_mes .goods_count span:last-child i {
+  display: inline-block;
+  width: 26px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+#details .details_R .details_mes .goods_count span:last-child input {
+  width: 40px;
+  height: 17px;
+  padding: 5px;
+  text-align: center;
+  line-height: 17px;
+}
+#details .details_R .details_mes .submit_box {
+  height: 55px;
+  padding-left: 20px;
+  margin-top: 13px;
+}
+#details .details_R .details_mes .submit_box input {
+  width: 160px;
+  height: 55px;
+  cursor: pointer;
+}
+#details .details_R .details_mes .submit_box input:nth-child(1) {
+  background: #fff;
+  color: #ec1611;
+  text-align: center;
+  font: 20px/36px '\5FAE\8F6F\96C5\9ED1';
+  border: 1px solid #ec1611;
+}
+#details .details_R .details_mes .submit_box input:nth-child(2) {
+  color: #fff;
+  text-align: center;
+  font: 20px/36px '\5FAE\8F6F\96C5\9ED1';
+  background: #ec1611;
+  border: 1px solid #ec1611;
+}
+#details .details_R aside {
+  width: 168px;
+  height: 466px;
+  border: 1px solid #e5e5e5;
+  margin-left: 10px;
+  padding: 16px 16px 0;
+}
+#details .details_R aside h4 {
+  width: 198px;
+  height: 68px;
+}
+#details .details_R aside h4 a {
+  display: block;
+  width: 120px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #666;
+  line-height: 20px;
+}
+#details .details_R aside h4 a:hover {
+  color: #000;
+}
+#details .details_R aside p {
+  height: 42px;
+  line-height: 42px;
+  font-size: 12px;
+}
+#details .details_R aside p span:nth-child(1) {
+  color: #666;
+}
+#details .details_R aside p span:nth-child(2) {
+  color: #ff404c;
+}
