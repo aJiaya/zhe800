@@ -2,7 +2,7 @@
 
 include_once "./connectDB.php";
 
-$userName=$_REQUEST["uName"];
+$userName=$_REQUEST["username"];
 $userPass=$_REQUEST["uPass"];
 
 $sql="SELECT * FROM `password` WHERE userName = '$userName'";

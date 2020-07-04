@@ -37,6 +37,15 @@ $(() => {
         let str = ("欢迎您，" + localStorage.getItem("username")).toString();
         $(".user").text(str)
         $(".user").css({ "height": "30px", "line-height": "30px" })
+
+       /* 设置注销 */
+        $(".user").next().children().text("注销");
+        $(".user").next().children().on("click",function(){
+            console.log(111)
+            localStorage.setItem("userID","");
+            location.reload()
+        })
+
     }else{
         alert("请登录后浏览网站")
         location.href="../client/record.html"
