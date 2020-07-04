@@ -45,7 +45,7 @@ $(() => {
 
 
     /* 商品列表的移出移入 */
-    $(".all_list").on("mouseenter", "a", function () {
+    $(".all_list").on("mouseenter", "li", function () {
         $(this).children("div").css("display", "block")
     })
     $(".all_list").on("mouseleave", "li", function () {
@@ -68,9 +68,10 @@ $(() => {
     })
 
 
+
     /* 跳转详情页 */
     $(".all_list").on("click", "a", function () {
-        let nameID = $(this).attr("data-id");
+        let nameID = $(this).parent().attr("data-id") || $(this).parent().parent().attr("data-id");
         localStorage.setItem("goodsNameID", nameID);
         location.href = "../client/goodsDetails.html"
     })

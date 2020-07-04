@@ -190,24 +190,8 @@ $(() => {
     })
 
 
-    //?????????????????????????????
-    /* 全选 */
-
     
-   
-    // })
-    // $(".chooseAll").each(function (index, item) {
-    //     $(item).click(function () {
-    //         $("input[type=checkbox]").prop("checked",function(){
-    //             if($(this).is(":checked")){
-    //                 return false;
-    //             }else{
-    //                 return true;
-    //             }
-    //         })
-    //     })
-
-    // })
+    /* 全选 */
 
     $(".mark").attr("checked", "checked");
 
